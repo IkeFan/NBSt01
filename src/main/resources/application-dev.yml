@@ -1,0 +1,30 @@
+server:
+  port: 8887
+  ssl:
+    key-store: classpath:ssl/outgoing.CertwithKey.pkcs12
+    key-store-type: PKCS12
+    key-store-password: IoM@1234
+    trust-store:  classpath:ssl/ca.jks
+    trust-store-type: JKS
+    trust-store-password: Huawei@123
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/iotst?characterEncoding=utf8&useSSL=true
+    username: root
+    password: mysql123
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+    type-aliases-package: com.xiaoxiong.nbst01.model
+    mapper-locations: classpath:mybatis/mapper/*.xml
+
+debug: true
+
+
+
+
+
+
+
+
