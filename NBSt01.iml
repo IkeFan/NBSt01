@@ -97,5 +97,14 @@
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.hateoas:spring-hateoas:0.24.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-ui:2.2.2" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: nb.huawei:nb.e:1.0.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/resources/lib/api-client-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

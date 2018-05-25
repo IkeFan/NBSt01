@@ -64,6 +64,14 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.2.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>nb.huawei</groupId>
+            <artifactId>nb.e</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/api-client-1.0.0.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -71,6 +79,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
             </plugin>
 
             <!--生成Mybatis映射文件-->

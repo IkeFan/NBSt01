@@ -60,7 +60,7 @@ public class AccountController {
     }
 
     @ApiOperation(value = "查询信息",notes = "返回账户信息 AccountInfo")
-    @GetMapping("/info")
+    @GetMapping("/{account}")
     public RestResult<AccountInfo> getInfo(@RequestParam("account") String account){
         Account user =  mAccountService.findByAccount(account);
         if(EmptyChecker.isEmpty(user)){
